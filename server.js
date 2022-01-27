@@ -15,7 +15,13 @@ const dbParams = require('./lib/db');
 const db = new Pool(dbParams);
 db.connect(() => {
   console.log(`connected to ${dbParams.database} database`);
-})
+});
+
+// ROUTES
+const login = require('./lib/routes/auth/login');
+
+
+app.use('/api/login', login(db));
 
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);
