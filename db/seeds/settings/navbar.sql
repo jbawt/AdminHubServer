@@ -1,0 +1,1 @@
+INSERT INTO navbar (display, folded, position, style) VALUES (true, true, 'left', 'style-1');

@@ -1,0 +1,1 @@
+INSERT INTO configs (navbar_id, toolbar_id, footer_id, scroll, mode, containerWidth, leftPanelDisplay, rightPanelDisplay) VALUES (1, 1, 1, 'content', 'container', 1570, true, true);

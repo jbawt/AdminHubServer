@@ -1,0 +1,1 @@
+INSERT INTO toolbar (display, style, position) VALUES (true, 'fixed', 'below');

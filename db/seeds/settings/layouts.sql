@@ -1,0 +1,1 @@
+INSERT INTO layouts (config_id, style) VALUES (1, 'layout1');

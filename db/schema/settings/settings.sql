@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS settings CASCADE;
+
+CREATE TABLE settings (
+  id SERIAL PRIMARY KEY NOT NULL,
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  layout_id INTEGER REFERENCES layouts(id) ON DELETE CASCADE,
+  theme_id INTEGER REFERENCES themes(id) ON DELETE CASCADE,
+  customScrollBars BOOLEAN NOT NULL,
+  direction VARCHAR(255) NOT NULL,
+  loginRedirectUrl VARCHAR(255) NOT NULL
+);

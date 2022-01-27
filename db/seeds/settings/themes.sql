@@ -1,0 +1,1 @@
+INSERT INTO themes (main, navbar, toolbar, footer) VALUES ('defaultDark', 'defaultDark', 'defaultDark', 'defaultDark');

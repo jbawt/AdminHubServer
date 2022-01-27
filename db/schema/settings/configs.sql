@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS configs CASCADE;
+
+CREATE TABLE configs (
+  id SERIAL PRIMARY KEY NOT NULL,
+  navbar_id INTEGER REFERENCES navbar(id) ON DELETE CASCADE,
+  toolbar_id INTEGER REFERENCES toolbar(id) ON DELETE CASCADE,
+  footer_id INTEGER REFERENCES footer(id) ON DELETE CASCADE,
+  scroll VARCHAR(255)NOT NULL,
+  mode VARCHAR(255) NOT NULL,
+  containerWidth INTEGER NOT NULL,
+  leftPanelDisplay BOOLEAN NOT NULL,
+  rightPanelDisplay BOOLEAN NOT NULL
+);

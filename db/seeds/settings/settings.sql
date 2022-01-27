@@ -1,0 +1,1 @@
+INSERT INTO settings (user_id, layout_id, theme_id, customScrollBars, direction, loginRedirectUrl) VALUES (1, 1, 1, true, 'ltr', 'apps/notes');

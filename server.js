@@ -19,9 +19,10 @@ db.connect(() => {
 
 // ROUTES
 const login = require('./lib/routes/auth/login');
-
+const updateUser = require('./lib/routes/user/user');
 
 app.use('/api/login', login(db));
+app.use('/api/auth/user', updateUser(db));
 
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);
