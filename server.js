@@ -20,9 +20,11 @@ db.connect(() => {
 // ROUTES
 const login = require('./lib/routes/auth/login');
 const updateUser = require('./lib/routes/user/user');
+const tokenLogin = require('./lib/routes/auth/tokenLogin');
 
 app.use('/api/login', login(db));
 app.use('/api/auth/user', updateUser(db));
+app.use('/api/auth/access-token', tokenLogin(db));
 
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);
