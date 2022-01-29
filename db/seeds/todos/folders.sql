@@ -1,0 +1,1 @@
+INSERT INTO folders (handle, title, icon) VALUES ('all', 'All', 'view_headline');

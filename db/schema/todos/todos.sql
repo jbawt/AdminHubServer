@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS todos CASCADE;
+
+CREATE TABLE todos (
+  id SERIAL PRIMARY KEY NOT NULL,
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  title VARCHAR(255) NOT NULL,
+  notes TEXT NOT NULL,
+  start_date DATE NOT NULL,
+  due_date DATE NOT NULL,
+  completed BOOLEAN NOT NULL,
+  starred BOOLEAN NOT NULL,
+  important BOOLEAN NOT NULL,
+  deleted BOOLEAN NOT NULL
+);
