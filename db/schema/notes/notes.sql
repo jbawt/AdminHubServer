@@ -6,7 +6,7 @@ CREATE TABLE notes (
   title VARCHAR(255) NOT NULL,
   description VARCHAR(255) NOT NULL,
   archive BOOLEAN NOT NULL,
-  image BYTEA,
-  time DATE,
-  reminder DATE
+  image TEXT,
+  time TIMESTAMP,
+  reminder TIMESTAMP
 );
