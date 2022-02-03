@@ -1,0 +1,2 @@
+INSERT INTO cards (list_id, name, description, id_attachment_cover, subscribed, due) VALUES (1, 'Update generators', 'current generator does not support node.js 6 and above', null, false, '2022-02-05');
+INSERT INTO cards (list_id, name, description, id_attachment_cover, subscribed, due) VALUES (2, 'Change Background Colors', '', null, true, '2022-02-07');

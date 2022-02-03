@@ -1,0 +1,1 @@
+INSERT INTO activities (card_id, type, member_id, message, time) VALUES (1, 'comment', 1, 'AngularCLI could be a nice alternative.', '2022-01-09');

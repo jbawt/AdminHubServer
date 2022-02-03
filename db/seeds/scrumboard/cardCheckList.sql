@@ -1,0 +1,1 @@
+INSERT INTO card_checklists (card_id, name) VALUES (1, 'Checklist');
