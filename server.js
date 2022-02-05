@@ -27,6 +27,9 @@ const noteLabels = require('./lib/routes/notesApp/labels');
 const notes = require('./lib/routes/notesApp/notes');
 const quickPanel = require('./lib/routes/quickPanel/data');
 const boards = require('./lib/routes/scrumBoard/boards');
+const board = require('./lib/routes/scrumBoard/board');
+const cards = require('./lib/routes/scrumBoard/cards');
+const lists = require('./lib/routes/scrumBoard/lists');
 
 app.use('/api/login', login(db));
 app.use('/api/auth/user', updateUser(db));
@@ -37,6 +40,10 @@ app.use('/api/notes-app', noteLabels(db));
 app.use('/api/notes-app', notes(db));
 app.use('/api/quick-panel', quickPanel(db));
 app.use('/api/scrumboard-app', boards(db));
+app.use('/api/scrumboard-app', cards(db));
+app.use('/api/scrumboard-app', board(db));
+app.use('/api/scrumboard-app', lists(db));
+
 
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);
