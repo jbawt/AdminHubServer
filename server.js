@@ -30,6 +30,7 @@ const boards = require('./lib/routes/scrumBoard/boards');
 const board = require('./lib/routes/scrumBoard/board');
 const cards = require('./lib/routes/scrumBoard/cards');
 const lists = require('./lib/routes/scrumBoard/lists');
+const calendar = require('./lib/routes/calendar/calendar');
 
 app.use('/api/login', login(db));
 app.use('/api/auth/user', updateUser(db));
@@ -43,6 +44,7 @@ app.use('/api/scrumboard-app', boards(db));
 app.use('/api/scrumboard-app', cards(db));
 app.use('/api/scrumboard-app', board(db));
 app.use('/api/scrumboard-app', lists(db));
+app.use('/api/calendar-app', calendar(db));
 
 
 app.listen(PORT, () => {
