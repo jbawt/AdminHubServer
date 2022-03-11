@@ -32,6 +32,7 @@ const cards = require('./lib/routes/scrumBoard/cards');
 const lists = require('./lib/routes/scrumBoard/lists');
 const calendar = require('./lib/routes/calendar/calendar');
 const drive = require('./lib/routes/fileManager/fileManager');
+const gmail = require('./lib/routes/mail/mail');
 const notificationPanel = require('./lib/routes/notifications/getNotifications');
 
 app.use('/api/login', login(db));
@@ -48,6 +49,7 @@ app.use('/api/scrumboard-app', board(db));
 app.use('/api/scrumboard-app', lists(db));
 app.use('/api/calendar-app', calendar(db));
 app.use('/api/file-manager-app', drive(db));
+app.use('/api/mail-app', gmail(db));
 app.use('/api/notification-panel', notificationPanel(db));
 
 
