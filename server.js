@@ -35,6 +35,10 @@ const drive = require('./lib/routes/fileManager/fileManager');
 const gmail = require('./lib/routes/mail/mail');
 const notificationPanel = require('./lib/routes/notifications/getNotifications');
 const contacts = require('./lib/routes/contacts/contacts');
+const about = require('./lib/routes/user/about');
+const widgets = require('./lib/routes/dashboards/scrumboards/widgets');
+const scrumboards = require('./lib/routes/dashboards/scrumboards/scrumboards');
+const gitAuth = require('./lib/routes/auth/gitAuth');
 
 app.use('/api/login', login(db));
 app.use('/api/auth/user', updateUser(db));
@@ -53,6 +57,10 @@ app.use('/api/file-manager-app', drive(db));
 app.use('/api/mail-app', gmail(db));
 app.use('/api/notification-panel', notificationPanel(db));
 app.use('/api/contacts-app', contacts(db));
+app.use('/api/profile', about(db));
+app.use('/api/project-dashboard-app', widgets(db));
+app.use('/api/project-dashboard-app', scrumboards(db));
+app.use('/api/github', gitAuth(db));
 
 
 app.listen(PORT, () => {
