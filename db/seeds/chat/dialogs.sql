@@ -1,0 +1,2 @@
+INSERT INTO dialogs (sender_id, user_chat_id, message, time) VALUES (1, 1, 'Hey Astrid', '2022-04-29');
+INSERT INTO dialogs (sender_id, user_chat_id, message, time) VALUES (2, 1, 'Hey Josh', '2022-05-10');

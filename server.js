@@ -39,6 +39,9 @@ const about = require('./lib/routes/user/about');
 const widgets = require('./lib/routes/dashboards/scrumboards/widgets');
 const scrumboards = require('./lib/routes/dashboards/scrumboards/scrumboards');
 const gitAuth = require('./lib/routes/auth/gitAuth');
+const userChatInfo = require('./lib/routes/chat/userData');
+const chatContacts = require('./lib/routes/chat/contacts');
+const chats = require('./lib/routes/chat/chats');
 
 app.use('/api/login', login(db));
 app.use('/api/auth/user', updateUser(db));
@@ -61,6 +64,9 @@ app.use('/api/profile', about(db));
 app.use('/api/project-dashboard-app', widgets(db));
 app.use('/api/project-dashboard-app', scrumboards(db));
 app.use('/api/github', gitAuth(db));
+app.use('/api/chat', userChatInfo(db));
+app.use('/api/chat', chatContacts(db));
+app.use('/api/chat', chats(db));
 
 
 app.listen(PORT, () => {

@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS dialogs CASCADE;
+
+CREATE TABLE dialogs (
+  id SERIAL PRIMARY KEY NOT NULL,
+  sender_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  user_chat_id INTEGER REFERENCES user_chats(id) ON DELETE CASCADE,
+  message TEXT NOT NULL,
+  time DATE NOT NULL
+);
