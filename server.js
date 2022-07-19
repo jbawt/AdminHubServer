@@ -42,6 +42,7 @@ const gitAuth = require('./lib/routes/auth/gitAuth');
 const userChatInfo = require('./lib/routes/chat/userData');
 const chatContacts = require('./lib/routes/chat/contacts');
 const chats = require('./lib/routes/chat/chats');
+const income = require('./lib/routes/budget/income');
 
 app.use('/api/login', login(db));
 app.use('/api/auth/user', updateUser(db));
@@ -67,6 +68,7 @@ app.use('/api/github', gitAuth(db));
 app.use('/api/chat', userChatInfo(db));
 app.use('/api/chat', chatContacts(db));
 app.use('/api/chat', chats(db));
+app.use('/api/budget', income(db));
 
 
 app.listen(PORT, () => {
