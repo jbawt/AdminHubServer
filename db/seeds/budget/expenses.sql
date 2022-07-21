@@ -1,2 +1,12 @@
-INSERT INTO expenses (user_id, month, year) VALUES (1, 'Aug', 2022);
-INSERT INTO expenses (user_id, month, year) VALUES (2, 'Aug', 2022);
+INSERT INTO expenses (user_id, month, year, name) VALUES (1, 'Aug', 2022, 'Rent');
+INSERT INTO expenses (user_id, month, year, name) VALUES (2, 'Aug', 2022, 'Rent');
+INSERT INTO expenses (user_id, month, year, name) VALUES (1, 'Aug', 2022, 'Insurance');
+INSERT INTO expenses (user_id, month, year, name) VALUES (2, 'Aug', 2022, 'Insurance');
+INSERT INTO expenses (user_id, month, year, name) VALUES (1, 'Aug', 2022, 'Phone');
+INSERT INTO expenses (user_id, month, year, name) VALUES (2, 'Aug', 2022, 'Phone');
+INSERT INTO expenses (user_id, month, year, name) VALUES (1, 'Aug', 2022, 'Food');
+INSERT INTO expenses (user_id, month, year, name) VALUES (2, 'Aug', 2022, 'Food');
+INSERT INTO expenses (user_id, month, year, name) VALUES (1, 'Aug', 2022, 'Gas');
+INSERT INTO expenses (user_id, month, year, name) VALUES (2, 'Aug', 2022, 'Gas');
+INSERT INTO expenses (user_id, month, year, name) VALUES (1, 'Aug', 2022, 'Utilities');
+INSERT INTO expenses (user_id, month, year, name) VALUES (2, 'Aug', 2022, 'Utilities');
