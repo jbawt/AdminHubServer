@@ -1,0 +1,12 @@
+INSERT INTO expense_amount (expense_id, amount) VALUES (1, 700.00);
+INSERT INTO expense_amount (expense_id, amount) VALUES (2, 700.00);
+INSERT INTO expense_amount (expense_id, amount) VALUES (3, 155.25);
+INSERT INTO expense_amount (expense_id, amount) VALUES (4, 100.23);
+INSERT INTO expense_amount (expense_id, amount) VALUES (5, 143.54);
+INSERT INTO expense_amount (expense_id, amount) VALUES (6, 82.5023);
+INSERT INTO expense_amount (expense_id, amount) VALUES (7, 200.00);
+INSERT INTO expense_amount (expense_id, amount) VALUES (8, 200.00);
+INSERT INTO expense_amount (expense_id, amount) VALUES (9, 210.45);
+INSERT INTO expense_amount (expense_id, amount) VALUES (10, 200.20);
+INSERT INTO expense_amount (expense_id, amount) VALUES (11, 300.00);
+INSERT INTO expense_amount (expense_id, amount) VALUES (12, 200.00);

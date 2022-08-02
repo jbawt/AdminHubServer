@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS user_chat_info CASCADE;
+
+CREATE TABLE user_chat_info (
+  id SERIAL PRIMARY KEY NOT NULL,
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  status VARCHAR(50),
+  mood VARCHAR(255)
+);
