@@ -45,6 +45,7 @@ const chats = require('./lib/routes/chat/chats');
 const income = require('./lib/routes/budget/income');
 const expenses = require('./lib/routes/budget/expenses');
 const goals = require('./lib/routes/budget/goals');
+const budgetCards = require('./lib/routes/budget/cards');
 
 app.use('/api/login', login(db));
 app.use('/api/auth/user', updateUser(db));
@@ -73,6 +74,7 @@ app.use('/api/chat', chats(db));
 app.use('/api/budget', income(db));
 app.use('/api/budget', expenses(db));
 app.use('/api/budget', goals(db));
+app.use('/api/budget/card', budgetCards(db));
 
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);
